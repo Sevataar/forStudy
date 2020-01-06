@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html{
+  /* background-image: url(); */
+  height: 100%;
+  background-color: #0e0e0e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  clear: right;
+}
+
+header:before{
+  content: ''; 
+  display: table;
+  width:100%;
+  position:absolute;
+  left:0;
+  z-index:-1;
+}
+
+.ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 40px;
+  display: flex;
+}
+
+.ul .li a{
+  color: #fff;
+  display: block;
+  height: 40px;
+  padding: 0 15px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 20px;
+  background-color: #233056;
+}
+
+.ul .li a:hover{
+  background:#73adff;
+}
+
+.menu{
+  background-color: #233056;
+}
+
+.rmenu{
+  background-color: #233056;
+  color: #fff;
+  position: absolute; top: 10%; right: 5%;
+  float: left;
+  float: right;
+}
+
+.rul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 40px;
+}
+
+.rul .rli .ra{
+  color: #fff;
+  display: block;
+  height: 40px;
+  padding: 0 15px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.rul .rli .ra:hover{
+  background:#73adff;
+}
+
+.ra{
+  background-color: #233056;
+}
+
+.help{
+  color: #fff;
+  margin: 0px;
+  padding: 0 15px;
+  text-decoration: none;
+  line-height: 20px;
+  border: 1px solid #233056;
+  color: #75adfc;
+  font-size: 16px;
+}
+
+.help:hover,
+.portal:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.portal{
+  color: #fff;
+  padding: 0 15px;
+  margin: 0px;
+  text-decoration: none;
+  line-height: 20px;
+  border: 1px solid #233056;
+  color: #75adfc;
+  font-size: 18px;
+}
+
+.content{
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.img{
+  display: flex;
+  margin: 10px 0px;
+}
+
+.row > div{
+  border: 1px solid #233056;
+}
+
+pre{
+  background-color: #0e0e0e;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+code{
+  background-color: #0e0e0e;
+  font-size: 16px;
+  border: none;
+}
+
+.table{
+  padding:0px;
+  margin: 10px 0px;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.slider{
+  margin: 10px;
+}
+
+#slider {
+  position: relative;
+text-align: center;
+  top: 10px;
+}
+
+#slider{
+margin: 0 auto;
+}
+
+#slides article{
+width: 20%;
+display: left;
+}
+
+#slides .img{
+width: 500%;
+line-height: 0;
+}
+
+#overflow{
+width: 100%;
+overflow: hidden;
+}
+
+article img{
+width: 100%;
+}
+
+#desktop:checked ~ #slider{
+max-width: 400px;
+}
+
+#slide1:checked ~ #controls label:nth-child(3), 
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2){
+background: url(..\public\images\prev.png) no-repeat;
+display: left;
+margin: 0;
+display: block;
+height: 68px;
+width: 68px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(1){
+background: url(..\public\images\next.png) no-repeat;
+display: right;
+margin: 0;
+display: block;
+height: 68px;
+width: 68px;
+}
+
+label, a{
+cursor: pointer;
+}
+
+.slider input{
+display: none;
+}
+
+#slide1:checked ~ #slides .img{
+margin-left: 0;
+}
+
+#slide2:checked ~ #slides .img{
+margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .img{
+margin-left: -200%;
+}
+
+
+#controls{
+margin: 0;
+width: 100%;
+height: 50px;
+}
+
+#active label{
+border-radius: 10px;
+display: inline-block;
+width: 15px;
+height: 15px;
+background: #bbb;
+}
+
+#active{
+margin: 0;
+text-align: center;
+}
+
+#active label:hover{
+background: #73adff;
+border-color: #777;
+}
+
+/*цвет активвации чекбокса*/
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3){
+background: #233056;
+border-color: #75adfc;
+}
+
+#slides .image{
+transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{
+opacity: 0.6;
+}
+
+#controls label{
+transition: opacity 0.2s ease-out;
+}
