@@ -1,4 +1,7 @@
 "use strict";
+
+$('.parallax').parallax({imageSrc: '..\public\images\fire.jpg'});
+
 // alert("Не лезь! Оно тебя сжрёт!");
 
 // const myBirthday = "29.06.1999";
