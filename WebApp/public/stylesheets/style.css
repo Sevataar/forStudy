@@ -320,15 +320,15 @@ form{
 }
 
 input{
+  display: block;
+  margin: 5px auto;
   width: 350px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   color: #0e0e0e;
 }
 
 textarea{
   width: 350px;
-  margin: 5px 0;
+  margin: 5px auto;
   color: #0e0e0e;
 }
 
