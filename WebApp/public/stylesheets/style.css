@@ -306,6 +306,7 @@ transition: opacity 0.2s ease-out;
   width: 400px;
   margin: auto;
   padding: 5px;
+  border-radius: 5px;
 }
 
 .feedHead{
