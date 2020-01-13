@@ -308,9 +308,9 @@ button{
 }
 
 .form{
-  position: relative; right: 30%;
+  position: relative;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 0 auto;
 }
 
 
