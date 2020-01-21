@@ -10,11 +10,16 @@
         },
         {
             "type": "npm",
-            "script": "start",
+            "script": "lessc",
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "group": "build"
         }
     ]
 }

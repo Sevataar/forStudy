@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "lessc": "lessc public/stylesheets/style1.less public/stylesheets/style1.css"
   },
   "dependencies": {
     "bootstrap": "~3",
