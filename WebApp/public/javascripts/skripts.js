@@ -1,4 +1,26 @@
 "use strict";
+
+$(".parallax").parallax({ imageSrc: "..publicimages\fire.jpg" });
+
+$(document).ready(function() {
+  //E-mail Ajax Send
+  $("form").submit(function() {
+    //Change
+    let th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+});
+
 // alert("Не лезь! Оно тебя сжрёт!");
 
 // const myBirthday = "29.06.1999";
@@ -65,3 +87,10 @@
 //   }
 //   alert(i);
 // }
+
+for (let i = 1; i <= 15; i++) {
+  if (i % 3 == 0) console.log("Fizz");
+  else if (i % 5 == 0) console.log("Buzz");
+  else if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
+  else console.log(i);
+}
