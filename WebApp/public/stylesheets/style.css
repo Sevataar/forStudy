@@ -57,6 +57,7 @@ header:before{
 
 .ul .li a:hover{
   background:#73adff;
+  /* background: lighten; */
 }
 
 .menu{
