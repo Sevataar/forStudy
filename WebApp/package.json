@@ -7,6 +7,7 @@
     "lessc": "lessc public/stylesheets/style1.less public/stylesheets/style1.css"
   },
   "dependencies": {
+    "constantinople": ">=3.1.1",
     "bootstrap": "~3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
