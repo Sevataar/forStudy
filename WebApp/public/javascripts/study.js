@@ -1,26 +1,5 @@
 "use strict";
 
-$(".parallax").parallax({ imageSrc: "..publicimages\fire.jpg" });
-
-$(document).ready(function() {
-  //E-mail Ajax Send
-  $("form").submit(function() {
-    //Change
-    let th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-});
-
 // alert("Не лезь! Оно тебя сжрёт!");
 
 // const myBirthday = "29.06.1999";
@@ -59,7 +38,7 @@ $(document).ready(function() {
 
 // let num;
 // do {
-//   num = prompt("Введите число юольше 100", 0);
+//   num = prompt("Введите число больше 100", 0);
 // } while (num <= 100 && num);
 
 // for (i = 0; i < 10; i++) {
@@ -93,8 +72,63 @@ $(document).ready(function() {
 //     console.log("Fizz");
 //   } else if (i % 5 == 0){
 //     console.log("Buzz");
-// } else if (i % 3 == 0 && i % 5 == 0){
+//   } else if (i % 3 == 0 && i % 5 == 0){
 //   console.log("FizzBuzz");
-// } else console.log(i);
+//   } else console.log(i);
+// }
+
+// let sum = prompt("2 + 2 ?", "");
+// switch (+sum) {
+//   case 3:
+//     alert("Malo");
+//     break;
+//   case 4:
+//     alert("V tochku");
+//     break;
+//   case 5:
+//     alert("Mnogo");
+//     break;
+//   default:
+//     alert("net takih znachenii");
+//     break;
+// }
+
+// let sum = +prompt("2 + 2 ?", "");
+// switch (sum) {
+//   case 4:
+//     alert("V tochku");
+//     break;
+//   case 3:
+//   case 5:
+//     alert("neverno");
+//     break;
+//   default:
+//     alert("net takih znachenii");
+//     break;
+// }
+
+// function showMessage() {
+//     alert("Message");
+// }
+
+// function showMessage() {
+//     let message = "Message";
+//     alert(message);
+// }
+
+// let userName = "User";
+// function showMessage() {
+//   let message = "Hello, " + userName;
+//   alert(message);
+// }
+
+// function showMessage(from, text) {
+//   alert(from + ": " + text);
+// }
+// showMessage("User", " hello");
+
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+//     alert( from + ': ' + text );
 // }
 
