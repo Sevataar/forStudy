@@ -1,17 +1,16 @@
 "use strict";
 
-$(".parallax").parallax({ imageSrc: "..publicimages\fire.jpg" });
-
 $(document).ready(function() {
   //E-mail Ajax Send
   $("form").submit(function() {
     //Change
-    let th = $(this);
+    var th = $(this);
     $.ajax({
       type: "POST",
       url: "mail.php", //Change
       data: th.serialize()
     }).done(function() {
+      alert("Thank you!");
       setTimeout(function() {
         // Done Functions
         th.trigger("reset");

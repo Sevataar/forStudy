@@ -30,6 +30,11 @@ header:before{
   z-index:-1;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 .content{
   padding-left: 10px;
   margin-top: 10px;
@@ -57,7 +62,6 @@ header:before{
 
 .ul .li a:hover{
   background:#73adff;
-  /* background: lighten; */
 }
 
 .menu{
@@ -67,9 +71,8 @@ header:before{
 .rmenu{
   background-color: #233056;
   color: #fff;
-  position: absolute; top: 500px; right: 5%;
-  float: left;
-  float: right;
+  position: absolute; top: 10%; right: 5%;
+  display: flex;
 }
 
 .rul{
@@ -145,35 +148,6 @@ code{
 .table{
   padding:0px;
   margin: 10px 0px;
-}
-
-.parallax {
-  perspective: 1px;
-  height: 400px;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: transparent;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-
-.parallax__layer--back {
-  transform: translateZ(-1px);
-}
-
-.parImg{
-  width: 100%;
 }
 
 .slider{

@@ -19,7 +19,10 @@
         {
             "type": "npm",
             "script": "start",
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

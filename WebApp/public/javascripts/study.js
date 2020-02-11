@@ -132,3 +132,34 @@
 //     alert( from + ': ' + text );
 // }
 
+// let n = +prompt("Введите n");
+// function showPrimes(n) {
+//   for (let i = 0; i < n; i++) {
+//     if (!isPrime(i)) continue;
+//     console.log(i);
+//   }
+// }
+
+// function isPrime(n) {
+//   for (let i = 2; i < n; i++) {
+//     if (n % i == 0) return false;
+//   }
+//   return true;
+// }
+// showPrimes(n);
+
+// function ask(qestion, yes, no) {
+//   if (confirm(qestion)) {
+//     yes();
+//   } else {
+//     no();
+//   }
+// }
+// function showOk() {
+//   alert("Вы согласны");
+// }
+// function showCancel() {
+//   alert("Вы отменили выполнение.");
+// }
+
+// ask("Вы согласны?", showOk, showCancel);
