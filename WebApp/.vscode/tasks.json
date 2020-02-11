@@ -6,7 +6,10 @@
         {
             "type": "npm",
             "script": "install",
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "type": "npm",
@@ -16,10 +19,7 @@
         {
             "type": "npm",
             "script": "start",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         }
     ]
 }
