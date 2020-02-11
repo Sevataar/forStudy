@@ -11,10 +11,7 @@
         {
             "type": "npm",
             "script": "lessc",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "type": "npm",
