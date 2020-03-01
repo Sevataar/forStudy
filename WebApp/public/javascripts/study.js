@@ -172,8 +172,8 @@
 // alert(sum(2, 3));
 
 // let user = {
-//   name: "Jhon",
-//   age: 30
+//   name: "Alex",
+//   age: 20
 // };
 
 // let key = prompt("Что вы хотите узнать о пользователе?", "name");
@@ -188,4 +188,15 @@
 // };
 
 // alert( bag[fruit] );
+
+// let user = {
+//   name: "Alex",
+//   age: 20,
+//   isAdmin: true
+// };
+
+// for (let key in user) {
+//   alert(key);
+//   alert(user[key]);
+// }
 
