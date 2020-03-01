@@ -163,3 +163,29 @@
 // }
 
 // ask("Вы согласны?", showOk, showCancel);
+
+// let sum = (a, b) => {
+//   let result = a + b;
+//   return result;
+// };
+
+// alert(sum(2, 3));
+
+// let user = {
+//   name: "Jhon",
+//   age: 30
+// };
+
+// let key = prompt("Что вы хотите узнать о пользователе?", "name");
+// alert(user[key]);
+// alert("name" in user);
+
+// let fruit = prompt("Какой фрукт купить?", "");
+// let number = prompt("Сколько фруктов купить?", "");
+
+// let bag = {
+//   [fruit]: number
+// };
+
+// alert( bag[fruit] );
+
