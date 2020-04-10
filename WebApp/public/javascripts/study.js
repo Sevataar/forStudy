@@ -200,15 +200,15 @@
 //   alert(user[key]);
 // }
 
-let salaries = {
-  Johm: 100,
-  Ann: 160,
-  Pete: 130
-};
+// let salaries = {
+//   Johm: 100,
+//   Ann: 160,
+//   Pete: 130
+// };
 
-let sum = 0;
-for (let key in salaries) {
-  sum += salaries;
-}
+// let sum = 0;
+// for (let key in salaries) {
+//   sum += salaries;
+// }
 
-alert(sum);
+// alert(sum);
