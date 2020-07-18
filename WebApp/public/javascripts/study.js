@@ -171,6 +171,7 @@
 
 // alert(sum(2, 3));
 
+
 // let user = {
 //   name: "Alex",
 //   age: 20
@@ -180,6 +181,7 @@
 // alert(user[key]);
 // alert("name" in user);
 
+
 // let fruit = prompt("Какой фрукт купить?", "");
 // let number = prompt("Сколько фруктов купить?", "");
 
@@ -188,6 +190,7 @@
 // };
 
 // alert( bag[fruit] );
+
 
 // let user = {
 //   name: "Alex",
@@ -200,15 +203,62 @@
 //   alert(user[key]);
 // }
 
+
 // let salaries = {
-//   Johm: 100,
+//   John: 100,
 //   Ann: 160,
 //   Pete: 130
 // };
 
 // let sum = 0;
 // for (let key in salaries) {
-//   sum += salaries;
+//   sum += salaries[key];
 // }
 
-// alert(sum);
+// console.log(sum);
+
+
+// let menu = {
+//     widht: 200,
+//     height: 300,
+//     title: "My menu"
+// };
+
+// function multiplyNum(obj) {
+//     for (let key in obj) {
+//         if (typeof obj[key] == "number") {
+//             obj[key] *= 2;
+//         }
+//     }
+// }
+
+// multiplyNum(menu);
+
+// for (let key in menu){
+//     console.log(menu[key]);
+// }
+
+
+// let id = Symbol("id");
+// let user = {
+//     name: "Vasia",
+//     age: 30,
+//     [id]: 1
+// };
+
+// for(let key in user){
+//     console.log(key);
+// }
+// console.log(user[id]);
+
+
+// let user = {
+//     name: "Джон",
+//     age: 30,
+//     sayHi(){
+//         console.log(this.name);
+//     }
+// };
+// user.sayHi();
+
+
