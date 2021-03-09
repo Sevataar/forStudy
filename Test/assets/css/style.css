@@ -1,0 +1,20 @@
+body {
+    color: black;
+    background-color: black;
+    font-family: "Museo Sans", sans-serif;
+}
+
+header {
+    box-sizing: border-box;
+    background-image: url(https://seo-akademiya.imgix.net/site-assets/dist/images/header-bg.jpg?q=75&fm=jpg&bg=white&w=1920&h=987&fit=crop&sat=-100);
+    display: block;
+    font-family: "Museo Sans", sans-serif;
+}
+
+.top-row {
+    box-sizing: border-box;
+}
+
+.primary-dates {
+    color: #f16334;
+}
